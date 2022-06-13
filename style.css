@@ -14,9 +14,10 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 50%;
   margin: 0 auto;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .container {
@@ -121,6 +122,10 @@ button:hover {
 }
 
 @media screen and (max-width: 500px) {
+  header {
+    width: 70%;
+  }
+
   .card-1 {
     border-radius: 5px 5px 0 0;
   }
