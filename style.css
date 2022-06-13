@@ -7,13 +7,21 @@
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: #ddd;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  align-items: flex-end;
 }
 
 .container {
   width: 100%;
   max-width: 1440px;
-  font-family: 'Lexend Deca', sans-serif;
   color: hsl(0, 0%, 95%);
   padding: 5em 0;
   margin: 0 auto;
@@ -120,4 +128,31 @@ button:hover {
   .card-2 {
     border-radius: 0;
   }
+}
+
+/* Link to Grid Task */
+a {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
