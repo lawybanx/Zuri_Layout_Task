@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1c28;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  align-items: flex-end;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5em;
+}
+
+/* Link to Grid Task */
+a {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.grid-container {
+  display: grid;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  padding: 2.5em;
+}
+
+.item-1 {
+  grid-area: 1 / 1 / 4 / 4;
+  background-color: #eb5020;
+}
+
+.item-2 {
+  grid-area: 1 / 4 / 4 / 6;
+  background-color: #ffa401;
+}
+
+.item-3 {
+  grid-area: 4 / 1 / 7 / 3;
+  background-color: #05aa42;
+}
+
+.item-4 {
+  grid-area: 4 / 3 / 5 / 6;
+  background-color: #01aefd;
+}
+
+.item-5 {
+  grid-area: 5 / 3 / 7 / 6;
+  background-color: #01aefd;
+}
