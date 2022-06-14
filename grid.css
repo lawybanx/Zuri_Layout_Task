@@ -18,7 +18,7 @@ header {
   width: 50%;
   margin: 0 auto;
   align-items: center;
-  color: #fff
+  color: #fff;
 }
 
 h1 {
@@ -58,7 +58,7 @@ a:hover:after {
   max-width: 960px;
   margin: 0 auto;
   padding: 4em;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 80px) 110px 70px 60px;
   gap: 10px;
 }
 
